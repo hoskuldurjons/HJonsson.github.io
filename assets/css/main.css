@@ -1140,9 +1140,12 @@ input, select, textarea {
 			-ms-transition-delay: 0.75s;
 			transition-delay: 0.75s;
 			background-image: linear-gradient(to top, rgba(19, 21, 25, 0.5), rgba(19, 21, 25, 0.5)), url("../../images/overlay.png");
-			background-size: auto, 256px 256px;
-			background-position: center, center;
-			background-repeat: no-repeat, repeat;
+			background-size: auto,
+ 256px 256px;
+			background-position: center,
+ center;
+			background-repeat: no-repeat,
+ repeat;
 			z-index: 2;
 		}
 
@@ -1287,12 +1290,29 @@ input, select, textarea {
 				display: none;
 			}
 
+		#header .logo img {
+			display: block;
+			margin: auto;
+			position: absolute;
+			top: 0;
+			left: 0;
+			right: 0;
+			bottom: 0;
+
+			width: 100%;
+			height: auto;
+			max-width: 100px;
+			max-height: 100px;
+		}
+
 		#header .logo {
-			width: 5.5rem;
-			height: 5.5rem;
-			line-height: 5.5rem;
-			border: solid 1px #ffffff;
-			border-radius: 100%;
+			width: 105px;
+			height: 105px;
+			margin: 10; /* reset margin to center the image */
+			border-radius: 0; /* adjust this to match the border radius of the logo container */
+			padding: 5px;
+			border: 0.1px solid #fff;
+			box-sizing: border-box;
 		}
 
 			#header .logo .icon:before {
@@ -1438,13 +1458,13 @@ input, select, textarea {
 				}
 
 			#header .logo {
-				width: 4.75rem;
-				height: 4.75rem;
+				width: 60px;
+				height: 60px;
 				line-height: 4.75rem;
 			}
 
 				#header .logo .icon:before {
-					font-size: 1.75rem;
+					font-size: 60px;
 				}
 
 			#header .content .inner {
